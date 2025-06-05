@@ -7,7 +7,7 @@ import { Readable } from 'stream';
 ffmpeg.setFfmpegPath(ffmpegPath as string);
 
 
-export const weatherAudioMixer = (buffer: Buffer<ArrayBuffer>) => {
+export const weatherAudioMixer = (buffer: Buffer) => {
 	const stream = new Readable();
 	stream.push(buffer);
 	stream.push(null);
