@@ -57,7 +57,6 @@ export async function annoucementGPTAnnouncement(
 		],
 		model: 'gpt-4.1-mini',
 	});
-	console.log(completion.choices[0].message.content);
 	const mp3 = await openai.audio.speech.create({
 		model: 'gpt-4o-mini-tts',
 		voice: 'shimmer',

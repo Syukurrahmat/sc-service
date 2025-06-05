@@ -12,7 +12,7 @@ export const weatherAudioMixer = (buffer: Buffer) => {
 	stream.push(buffer);
 	stream.push(null);
 	
-	const newsIntro = path.join(__dirname, '..', 'mp3', 'news-intro.m4a')
+	const newsIntro = path.join(__dirname, '..', 'assets','mp3', 'news-intro.m4a')
 	console.log(newsIntro)
 
 	return ffmpeg()
