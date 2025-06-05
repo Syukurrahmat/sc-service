@@ -8,7 +8,7 @@ import { weatherAudioMixer } from './utils/utils';
 ffmpeg.setFfmpegPath(ffmpegPath as string); 
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000
  
 // Endpoint streaming audio mp3
 app.get('/forecast/today', async (req, res) => {
